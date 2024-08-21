@@ -40,7 +40,7 @@ const Recipes = () => {
         <div className="mt-24 mb-24 w-[82.5%] container mx-auto">
             <div className="text-center w-[62%] mx-auto">
                 <h1 className="font-semibold text-[40px]">Our Recipes</h1>
-                <p className="mt-6 text-[#150B2B99]">Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus. Eget urna volutpat curabitur elementum mauris aenean neque. </p>
+                <p className="mt-6 text-[#150B2B99]">Discover our diverse recipes featuring easy-to-follow instructions, fresh ingredients, and delightful flavors. Perfect for every meal, from quick weeknight dinners to special occasions.</p>
             </div>
             <div className="mt-12 flex flex-col xl2:flex-row gap-6">
                 <div className="xl2:w-2/3 grid gap-6 grid-cols-1 lg:grid-cols-2 mx-auto">

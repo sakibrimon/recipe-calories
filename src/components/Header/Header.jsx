@@ -1,3 +1,5 @@
+import userImage from '/src/assets/user.svg';
+
 const Header = () => {
     return (
         <div className="mt-12 w-[82.5%] container mx-auto">
@@ -57,7 +59,7 @@ const Header = () => {
                         <div className="dropdown dropdown-end">
                             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full">
-                                    <img src="/src/assets/user.svg" alt="" />
+                                    <img src={userImage} alt="" />
                                 </div>
                             </div>
                             <ul
