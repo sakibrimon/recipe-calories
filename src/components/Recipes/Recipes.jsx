@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
+import PropTypes from 'prop-types';
 import Recipe from "../Recipe/Recipe";
 import WannaCook from "../WannaCook/WannaCook";
 import Cooking from "../Cooking/Cooking";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const Recipes = () => {
+const Recipes = ({ targetRef }) => {
     const [recipes, setRecipes] = useState([]);
     const [wantToCook, setWantToCook] = useState([]);
     const [currentlyCooking, setCurrentlyCooking] = useState([]);
@@ -37,7 +38,7 @@ const Recipes = () => {
     }, [])
 
     return (
-        <div className="mt-24 mb-24 w-[82.5%] container mx-auto">
+        <div className="mt-24 mb-24 w-[82.5%] container mx-auto" ref={targetRef}>
             <div className="text-center w-[62%] mx-auto">
                 <h1 className="font-semibold text-[40px]">Our Recipes</h1>
                 <p className="mt-6 text-[#150B2B99]">Discover our diverse recipes featuring easy-to-follow instructions, fresh ingredients, and delightful flavors. Perfect for every meal, from quick weeknight dinners to special occasions.</p>
@@ -71,5 +72,9 @@ const Recipes = () => {
         </div>
     );
 };
+
+Recipes.propTypes = {
+    targetRef: PropTypes.object.isRequired
+}
 
 export default Recipes;

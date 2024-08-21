@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
 import backgroundImage from '/src/assets/herobg.png';
 
-const Banner = () => {
+const Banner = ({ handleScroll }) => {
     return (
         <div className='mt-12 w-[82.5%] container mx-auto'>
             <div
@@ -15,7 +16,7 @@ const Banner = () => {
                         <p className="mb-5">
                         Join our cooking class to master culinary techniques, explore global cuisines, and create delicious dishes. Perfect for beginners and seasoned chefs alike!
                         </p>
-                        <button className="btn btn-primary# bg-prime border-0 rounded-[50px]">Explore Now</button>
+                        <button className="btn btn-primary# bg-prime border-0 rounded-[50px]" onClick={handleScroll}>Explore Now</button>
                         <button className="ml-7 btn btn-outline text-white rounded-[50px]">Our Feedback</button>
                     </div>
                 </div>
@@ -23,5 +24,9 @@ const Banner = () => {
         </div>
     );
 };
+
+Banner.propTypes = {
+    handleScroll: PropTypes.func
+}
 
 export default Banner;
