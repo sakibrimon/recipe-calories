@@ -43,8 +43,8 @@ const Recipes = ({ targetRef }) => {
                 <h1 className="font-semibold text-[40px]">Our Recipes</h1>
                 <p className="mt-6 text-[#150B2B99]">Discover our diverse recipes featuring easy-to-follow instructions, fresh ingredients, and delightful flavors. Perfect for every meal, from quick weeknight dinners to special occasions.</p>
             </div>
-            <div className="mt-12 flex flex-col xl2:flex-row gap-6">
-                <div className="xl2:w-2/3 grid gap-6 grid-cols-1 lg:grid-cols-2 mx-auto">
+            <div className="mt-12 flex flex-col xl:flex-row gap-6">
+                <div className="xl:w-2/3 grid gap-6 grid-cols-1 md:grid-cols-2 mx-auto">
                     {
                         recipes.map(recipe => <Recipe
                             key={recipe.recipe_id}
@@ -53,7 +53,7 @@ const Recipes = ({ targetRef }) => {
                         ></Recipe>)
                     }
                 </div>
-                <div className="xl2:w-1/3 border rounded-2xl mx-auto">
+                <div className="xl:w-1/3 border rounded-2xl mx-auto">
                     <div className="mt-8">
                         <div className="w-[70%] mx-auto border-b">
                             <h2 className="text-2xl font-semibold text-center pb-4">Want to cook: {wantToCook.length.toString().padStart(2, '0')}</h2>

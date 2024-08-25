@@ -7,14 +7,14 @@ const Recipe = ({ recipe, handleWantToCook }) => {
     const { recipe_name, recipe_image, short_description, ingredients, preparing_time, calories } = recipe;
     return (
         <div>
-            <div className="card bg-base-100 w-96 shadow-xl# p-6 border">
+            <div className="card bg-base-100 w-96# w-full h-full shadow-xl# p-6 border">
                 <figure>
                     <img
                         src={recipe_image}
                         alt={`picture of ${recipe_name}`}
-                        className="rounded-xl w-full h-[200px]" />
+                        className="rounded-xl w-full h-[200px] object-cover" />
                 </figure>
-                <div className="mt-6 card-body# pl-0 py-0">
+                <div className="mt-6 card-body# flex flex-col flex-grow">
                     <h2 className="card-title">{recipe_name}</h2>
                     <p className="my-4 fira-sans-font text-[#878787]">{short_description}</p>
                     <hr />
@@ -26,7 +26,7 @@ const Recipe = ({ recipe, handleWantToCook }) => {
                             </li>)
                         }
                     </ul>
-                    <hr />
+                    <hr className="mt-auto" />
                     <div className="mt-7 flex items-center gap-5 fira-sans-font text-[#282828CC]">
                         <div className="flex items-center gap-1">
                             <CiClock2 />

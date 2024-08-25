@@ -29,7 +29,7 @@ const Header = () => {
                             <li><a>Search</a></li>
                         </ul>
                     </div>
-                    <a className="btn# btn-ghost# text-3xl font-bold" href="">Recipe Calories</a>
+                    <a className="btn# btn-ghost# text-base sm:text-3xl font-bold" href="">Recipe Calories</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
