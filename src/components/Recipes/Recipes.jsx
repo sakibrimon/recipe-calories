@@ -53,7 +53,7 @@ const Recipes = ({ targetRef }) => {
                         ></Recipe>)
                     }
                 </div>
-                <div className="xl:w-1/3 border rounded-2xl mx-auto">
+                <div className="w-full xl:w-1/3 border rounded-2xl mx-auto">
                     <div className="mt-8">
                         <div className="w-[70%] mx-auto border-b">
                             <h2 className="text-2xl font-semibold text-center pb-4">Want to cook: {wantToCook.length.toString().padStart(2, '0')}</h2>
